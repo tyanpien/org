@@ -1,0 +1,751 @@
+.wrapper {
+  padding: 10px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: var(--font-nunito);
+  min-height: 100vh;
+}
+.articlePage {
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: var(--font-nunito);
+}
+
+/* Книжная полка */
+.shelfSection {
+  margin-bottom: 60px;
+  margin-top: 160px;
+  z-index: 2;
+}
+
+.shelfHeader {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  margin-bottom: 80px;
+  width: 1020px;
+
+  @media (max-width: 768px) {
+    width: 10px;
+
+  }
+}
+
+.shelfTitle {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #9D9DCC;
+  margin: 0;
+}
+
+.shelfDescription {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-style: italic;
+  color: #333333;
+
+  @media (max-width: 768px) {
+    width: 450px;
+
+  }
+}
+
+.category {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  margin-bottom: 32px;
+  margin-top: 75px;
+  color: #A9A9A9;
+}
+
+.bookCard {
+  display: flex;
+  gap: 30px;
+  padding: 41px 83px;
+  width: 1030px;
+  border-radius: 5px;
+  height: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border: 0.8px solid #B2B2B2;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bookImage {
+  width: 134px;
+  height: 208px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.bookImageArt {
+  width: 192px;
+  height: 208px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.bookContent {
+  flex: 1;
+  padding: 0px 32px;
+}
+
+.bookTitle {
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 4%;
+  text-underline-offset: 20%;
+  text-underline-position: from-font;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.loading,
+.error {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 300px;
+}
+.bookTitleArt {
+  font-size: 26px;
+  text-align: justify;
+  width: 560px;
+  gap: 10px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.bookAuthor {
+  font-size: 16px;
+  text-decoration-line: underline;
+  color: #333333;
+  margin-bottom: 26px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 4%;
+  text-underline-offset: 20%;
+  text-underline-position: from-font;
+}
+
+.reviewText {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.opisanie {
+  line-height: 24px;
+  font-size: 16px;
+  text-align: justify;
+  width:650px;
+}
+
+.opisanieArt {
+  line-height: 24px;
+  font-size: 16px;
+  text-align: justify;
+
+  width:560px;
+}
+
+/* Статьи */
+.articlesSection {
+  margin-bottom: 60px;
+  z-index: 2;
+}
+
+.articlesTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 125px;
+  color: #9D9DCC;
+}
+.articleTags {
+  margin-top: 12px;
+  color: #747474;
+  font-size: 14px;
+}
+.articlesSubtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #A9A9A9;
+}
+
+.articleCard {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.articleImage {
+  width: 160px;
+  height: 180px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.articleContent {
+  flex: 1;
+}
+
+.articleTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.articleText {
+  margin-top: 25px;
+}
+
+.articleDescription {
+  margin-top: 25px;
+}
+
+.readMore {
+  background: none;
+  margin-top: 10px;
+  border: none;
+  color: #8681FF;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-nunito);
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.readMoreInline {
+  color: #8681FF;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.readMoreInline:hover {
+  text-decoration: underline;
+}
+
+
+.expandedText {
+  display: block;
+  margin-top: 15px;
+}
+
+.paperImage1,
+.paperImage2,
+.paperImage3,
+.paperImage4,
+.paperImage5,
+.paperImage6,
+.paperImage7,
+.paperImage8,
+.paperImage9,
+.paperImage10 {
+  position: absolute;
+  z-index: 0;
+}
+
+.paperImage1 {
+  margin-left: -280px;
+  top: 80px;
+  width: 220px;
+}
+
+.paperImage2 {
+  margin-left: 1025px;
+  top: 400px;
+  width: 200px;
+}
+
+.paperImage3 {
+  top: 1200px;
+  margin-left: -248px;
+  width: 200px;
+}
+
+.paperImage4 {
+  top: 1100px;
+  margin-left: -280px;
+  width: 250px;
+}
+
+.paperImage5 {
+  margin-left: 1045px;
+  width: 180px;
+  z-index: 1;
+}
+
+.paperImage6 {
+  margin-left: 975px;
+  width: 250px;
+  top: 1700px;
+}
+
+.paperImage7 {
+  margin-left: -250px;
+  width: 250px;
+  top: 3065px;
+}
+
+.paperImage8 {
+  margin-left: 1075px;
+  width: 150px;
+  top: 3365px;
+}
+
+.paperImage9 {
+  margin-left: 1075px;
+  width: 150px;
+  top: 2965px;
+}
+
+.paperImage10 {
+  top: 2300px;
+  margin-left: -280px;
+  width: 250px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 50px;
+    margin-top: -40px;
+  }
+
+  .shelfHeader {
+    gap: 60px;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    width: 900px;
+  }
+
+  .shelfTitle {
+    font-size: 26px;
+  }
+
+  .shelfDescription {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .bookCard {
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .bookImage,
+  .bookImageArt {
+    width: 150px;
+    height: 220px;
+  }
+
+  .bookTitle {
+    font-size: 15px;
+    flex-direction: column;
+  }
+
+  .bookTitleArt {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .reviewText,
+  .opisanie,
+  .opisanieArt {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .category {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  .articlesTitle {
+    font-size: 26px;
+    margin-top: 110px;
+  }
+
+  .articleCard {
+    gap: 20px;
+  }
+
+  .articleImage {
+    width: 200px;
+    height: 140px;
+  }
+
+  .articleTitle {
+    font-size: 17px;
+  }
+
+  .readMore,
+  .readMoreInline {
+    font-size: 15px;
+  }
+
+  .square {
+    width: 180px;
+    height: 180px;
+  }
+
+  .blockGrid {
+    grid-template-columns: repeat(2, 180px);
+    gap: 12px;
+  }
+
+  .bookContent {
+    padding: 0 20px;
+  }
+
+  .paperImage1 {
+  margin-left: -280px;
+  top: 80px;
+  width: 0px;
+  }
+
+  .paperImage2 {
+    margin-left: 1025px;
+    top: 400px;
+    width: 0px;
+  }
+
+  .paperImage3 {
+    top: 1200px;
+    margin-left: -248px;
+    width: 0px;
+  }
+
+  .paperImage4 {
+    top: 1100px;
+    margin-left: -280px;
+    width: 0px;
+  }
+
+  .paperImage5 {
+    margin-left: 1045px;
+    width: 0px;
+    z-index: 1;
+  }
+
+  .paperImage6 {
+    margin-left: 975px;
+    width: 0px;
+    top: 1700px;
+  }
+
+  .paperImage7 {
+    margin-left: -250px;
+    width: 0px;
+    top: 3065px;
+  }
+
+  .paperImage8 {
+    margin-left: 1075px;
+    width: 0px;
+    top: 3365px;
+  }
+
+  .paperImage9 {
+    margin-left: 1075px;
+    width: 0px;
+    top: 2965px;
+  }
+
+  .paperImage10 {
+    top: 2300px;
+    margin-left: -280px;
+    width: 0px;
+  }
+}
+
+@media (max-width:768px){
+  .paperImage1 {
+  margin-left: -280px;
+  top: 80px;
+  width: 0px;
+  }
+
+  .paperImage2 {
+    margin-left: 1025px;
+    top: 400px;
+    width: 0px;
+  }
+
+  .paperImage3 {
+    top: 1200px;
+    margin-left: -248px;
+    width: 0px;
+  }
+
+  .paperImage4 {
+    top: 1100px;
+    margin-left: -280px;
+    width: 0px;
+  }
+
+  .paperImage5 {
+    margin-left: 1045px;
+    width: 0px;
+    z-index: 1;
+  }
+
+  .paperImage6 {
+    margin-left: 975px;
+    width: 0px;
+    top: 1700px;
+  }
+
+  .paperImage7 {
+    margin-left: -250px;
+    width: 0px;
+    top: 3065px;
+  }
+
+  .paperImage8 {
+    margin-left: 1075px;
+    width: 0px;
+    top: 3365px;
+  }
+
+  .paperImage9 {
+    margin-left: 1075px;
+    width: 0px;
+    top: 2965px;
+  }
+
+  .paperImage10 {
+    top: 2300px;
+    margin-left: -280px;
+    width: 0px;
+  }
+}
+
+@media (max-width: 427px) {
+  .page {
+    margin-top: 60px;
+    background: white;
+    padding: 0 12px;
+  }
+
+  /* Секция книжной полки */
+  .shelfSection {
+    margin-top: 60px;
+    width: 90vw;
+    margin-left: -30px;
+  }
+
+  .shelfHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .shelfTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #9D9DCC;
+    text-align: center;
+    margin: 0;
+  }
+
+  .shelfDescription {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+  }
+
+  .category {
+    font-size: 16px;
+    font-weight: 600;
+    color: #A9A9A9;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .bookCard {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 0.8px solid #B2B2B2;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .bookImage {
+    width: 100%;
+    height: 180px;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .bookContent {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .bookTitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .bookAuthor {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .reviewText {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .opisanie {
+    font-size: 12px;
+    color: #666;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+
+  .readMoreInline {
+    color: #8681FF;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .readMoreInline:hover {
+    text-decoration: underline;
+  }
+
+  .readMore {
+    background: none;
+    border: none;
+    color: #8681FF;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  /* Статьи */
+  .articlesSection {
+    margin-top: 60px;
+    width: 90vw;
+    margin-left: -30px;
+  }
+  .articlesTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #9D9DCC;
+  }
+
+  .bookCard {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .bookImageArt {
+    width: 100%;
+    height: 180px;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+  }
+
+  .bookTitleArt {
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .opisanieArt {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  .expandedText {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+
+  .readMoreInline {
+    font-size: 12px;
+    color: #8681FF;
+  }
+
+  .bookImageArt {
+    width: 100%;
+    height: 180px;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+  }
+
+  .paperImage1,
+  .paperImage2,
+  .paperImage3,
+  .paperImage4,
+  .paperImage5,
+  .paperImage6,
+  .paperImage7,
+  .paperImage8,
+  .paperImage9,
+  .paperImage10 {
+    width: 0;
+    height: 0;
+  }
+
+  .paperButton {
+    font-size: 14px;
+    padding: 10px 20px;
+    background: #8681FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background 0.2s ease;
+  }
+
+  .paperButton:hover {
+    background: #8581ffc5;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  min-height: calc(100vh - 50px);
+}
+
+footer {
+  margin-top: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.background {
+  background: white;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
