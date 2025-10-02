@@ -7,41 +7,37 @@ const nextConfig = {
         protocol: 'http',
         hostname: '127.0.0.1',
         port: '8000',
-        pathname: '/media/images/**',
+        pathname: '/media/**',
       },
       {
         protocol: 'http',
         hostname: 'localhost',
         port: '8000',
-        pathname: '/media/images/**',
+        pathname: '/media/**',
       },
       // Для продакшена - добавьте домены вашего бэкенда
       {
         protocol: 'https',
         hostname: '*.railway.app',
-        pathname: '/media/images/**',
+        pathname: '/media/**',
       },
       {
         protocol: 'https',
         hostname: '*.onrender.com',
-        pathname: '/media/images/**',
+        pathname: '/media/**',
       },
       {
         protocol: 'https',
         hostname: '*.herokuapp.com',
-        pathname: '/media/images/**',
+        pathname: '/media/**',
       },
     ],
     formats: ['image/webp', 'image/avif'],
     unoptimized: process.env.NODE_ENV === 'production', // важно для Vercel
   },
   // Отключаем TypeScript проверку при билде (опционально)
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  // Отключаем ESLint при билде (опционально)
-  eslint: {
-    ignoreDuringBuilds: false,
+  env: {
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
   },
 }
 
